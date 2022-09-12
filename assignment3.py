@@ -27,7 +27,7 @@ combined_df.columns
 #Drop duplicates based on zip code
 combined_df_nodups = combined_df.drop_duplicates(subset=['Zip_Code_3_digits'])
 #save merged data without duplicates as new csv
-combined_df.to_csv()
+combined_df.to_csv('enriched/combined_df.csv')
 
 #enrich medications table with info from patients table
 df_patinets_small = patients[['Id', 'CITY', 'STATE', 'COUNTY','ZIP']]
