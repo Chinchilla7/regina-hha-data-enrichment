@@ -2,10 +2,10 @@ import pandas as pd
 
 # load in the data 
 
-patients = pd.read_csv('')
-patients
+sparcs = pd.read_csv('data/SPARCS_2015.csv')
+sparcs
 
-medications = pd.read_csv('')
+atlas = pd.read_csv('')
 
 #small dataframe in terminal
 patients_small = patients[['Id', 'SSN']]
