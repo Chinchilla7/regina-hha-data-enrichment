@@ -22,7 +22,7 @@ print(atlas_small.sample(10).to_markdown()) #quick check in terminal
 #merge data
 combined_df = sparcs_small.merge(atlas_small, how='left', left_on='Zip_Code_3_digits', right_on='ZIPID')
 combined_df = combined_df.drop(columns=['ZIPID'])
-#check merged data columns and save as new csv
+#check merged data columns 
 combined_df.columns
 #Drop duplicates based on zip code
 combined_df_nodups = combined_df.drop_duplicates(subset=['Zip_Code_3_digits'])
